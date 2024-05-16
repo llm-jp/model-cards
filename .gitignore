@@ -1,0 +1,6 @@
+*
+!.gitignore
+!CODEOWNERS
+!README.md
+!template.md
+!models/*.md
