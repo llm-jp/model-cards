@@ -25,7 +25,7 @@
 
 |Spec name|Value|
 |:---|:---|
-|Implementation|Megatron-LM (link to commit)|
+|Implementation|[Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/7b45c6ca5793ab3c7eba7c53863930dd538b83bf)|
 |Optimizer|AdamW|
 |Initial learning rate|1e-4|
 |Beta1|0.9|
