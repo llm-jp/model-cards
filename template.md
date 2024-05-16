@@ -13,6 +13,12 @@
 |Maximum sequence length|2048|
 |Positional embedding|RoPE|
 
+# Dataset specs
+|Spec name|Value|
+|:---|:---|
+|Dataset|LLM-jp v3 (link)|
+|Number of tokens|2.1T|
+
 # Training specs
 
 |Spec name|Value|
@@ -27,6 +33,7 @@
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
 |Learning rate scheduling steps|100,000|
+|Total training steps|120,000|
 |Global batch size|1536|
 |Dropout rate|0.2|
 |Floating point precisions|BF16 for parameters, FP32 for optimizer|
