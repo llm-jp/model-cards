@@ -30,7 +30,7 @@
 |Initial learning rate|1e-4|
 |Beta1|0.9|
 |Beta2|0.95|
-|Epsilon|1e-4|
+|Epsilon|1e-5|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
