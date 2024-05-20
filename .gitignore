@@ -3,4 +3,4 @@
 !CODEOWNERS
 !README.md
 !template.md
-!models/*.md
+!models/**/*.md
