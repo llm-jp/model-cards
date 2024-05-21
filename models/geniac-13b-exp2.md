@@ -17,7 +17,7 @@
 |Spec name|Value|
 |:---|:---|
 |Dataset|LLM-jp v3|
-|Number of tokens|2.1T|
+|Number of tokens|2,117,241,409,943 Token|
 
 # Training specs
 
