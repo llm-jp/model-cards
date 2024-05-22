@@ -19,7 +19,7 @@
 |Spec name|Value|
 |:---|:---|
 |Dataset|LLM-jp v3|
-|Number of tokens|2.1T|
+|Number of tokens|2,117,241,409,943 Token|
 
 # Training specs
 
@@ -40,6 +40,7 @@
 |Dropout rate|0.0|
 |Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
+|Z loss|1e-4|
 
 # Environmental specs
 
