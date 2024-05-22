@@ -40,6 +40,7 @@
 |Dropout rate|0.0|
 |Floating point precisions|BF16 -> BF16 + FP8|
 |Additional randomness/approximation|Flash Attention|
+|Z loss|1e-4|
 
 # Environmental specs
 
