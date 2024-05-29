@@ -28,7 +28,7 @@
 |Initial learning rate|2e-4|
 |Beta1|0.9|
 |Beta2|0.95|
-|Epsilon|1e-8|
+|Epsilon|1e-5|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
@@ -39,7 +39,7 @@
 |Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
-|Embedding scale|✅|
+|Embedding scale|❌|
 
 # Environmental specs
 
