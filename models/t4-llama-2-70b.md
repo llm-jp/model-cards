@@ -38,7 +38,9 @@
 |Total training steps|512,696|
 |Global batch size|1000|
 |Dropout rate|0.0|
-|Floating point precisions|BF16|
+|Floating point precisions 1~21,500 iter|
+BF16|
+|Floating point precisions 21,501 iter~|fp8-hybrid|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 
@@ -59,3 +61,5 @@
 
 2024年 夏 に学習予定の8x70B MoEモデルの元になる予定です。
 学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。
+
+速度向上のため、21,501 iterからfp8-hybridに変更
