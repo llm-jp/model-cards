@@ -12,6 +12,7 @@
 |GQA|✅|
 |num_key_value_heads|16|
 |Vocabulary size|99,487|
+|Tokenizer|[llm-jp-tokenizer-100k.ver3.0b1.model](https://github.com/llm-jp/llm-jp-tokenizer/blob/870a27ce6872e105e4b76cdf2e68c8b7ebfc6a37/models/ver3.0/llm-jp-tokenizer-100k.ver3.0b1.model)|
 |max_position_embeddings|4096|
 |Positional embedding|RoPE|
 
