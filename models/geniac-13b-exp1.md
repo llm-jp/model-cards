@@ -1,4 +1,4 @@
-# geniac-13b-exp2
+# geniac-13b-exp1
 
 # Model specs
 
