@@ -26,7 +26,7 @@
 |:---|:---|
 |Implementation|[Megatron-LM](https://github.com/Taishi-N324/Megatron-LM/tree/61447ffbc2cf60035428cea9c112565cfe32e33a)|
 |Optimizer|AdamW|
-|Initial learning rate|2e-4|
+|Initial learning rate|2.5e-4|
 |Beta1|0.9|
 |Beta2|0.95|
 |Epsilon|1e-8|
@@ -37,10 +37,10 @@
 |Total training steps|452,995|
 |Global batch size|1,024|
 |Dropout rate|0.0|
-|Floating point precisions|BF16|
+|Floating point precisions|fp8-hybrid|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
-|Embedding scale|✅|
+|Embedding scale|❌|
 
 # Environmental specs
 
@@ -56,7 +56,5 @@
 |Intra Node Communication |NVLink|
 
 # Comments
-
-[geniac-13b-exp1](geniac-13b-exp1.md) の学習において不安定性がみられたため、対策として、Embedding scaleの使用、fp8-hybridからBF16の使用、LRを2.5e-4から2e-4にしています。
 
 学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。
