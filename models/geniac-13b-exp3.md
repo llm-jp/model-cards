@@ -1,4 +1,4 @@
-# geniac-13b-exp2
+# geniac-13b-exp3
 
 # Model specs
 
@@ -29,7 +29,7 @@
 |Initial learning rate|2e-4|
 |Beta1|0.9|
 |Beta2|0.95|
-|Epsilon|1e-8|
+|Epsilon|1e-5|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
@@ -40,7 +40,7 @@
 |Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
-|Embedding scale|✅|
+|Embedding scale|❌|
 
 # Environmental specs
 
@@ -57,6 +57,9 @@
 
 # Comments
 
-[geniac-13b-exp1](geniac-13b-exp1.md) の学習において不安定性がみられたため、対策として、Embedding scaleの使用、fp8-hybridからBF16の使用、LRを2.5e-4から2e-4にしています。
+Loss spikeの対策に、Z loss、BF16の使用に加え、LRを2e-4にしています。
+
+LlamaForCausalLMとしてモデルをリリースしたいため、[geniac-13b-exp2](geniac-13b-exp2.md)から、Embedding scaleを除いています。加えて、Epsilonの値を、1e-8から、
+[geniac-172b](geniac-172b.md)と[mdx-1.7b](mdx-1.7b.md)と同じ 1e-5に変更しています。1e-5の値は、[Llama 2](https://arxiv.org/abs/2307.09288)に倣います。
 
 学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。
