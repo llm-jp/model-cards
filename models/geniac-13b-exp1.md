@@ -27,6 +27,7 @@
 |Implementation|[Megatron-LM](https://github.com/Taishi-N324/Megatron-LM/tree/61447ffbc2cf60035428cea9c112565cfe32e33a)|
 |Optimizer|AdamW|
 |Initial learning rate|2.5e-4|
+|Initial learning rate|2.5e-5|
 |Beta1|0.9|
 |Beta2|0.95|
 |Epsilon|1e-8|

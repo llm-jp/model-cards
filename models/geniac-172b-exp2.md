@@ -29,6 +29,7 @@
 |Implementation| **FIXME (link)** [Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/0cc02dff7943fddc53da42d8893dafe28ec3cf8e)|
 |Optimizer|AdamW|
 |Initial learning rate|8e-5|
+|Final learning rate|8e-6|
 |Beta1|0.9|
 |Beta2|0.95|
 |Epsilon|1e-8|
