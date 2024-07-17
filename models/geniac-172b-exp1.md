@@ -1,4 +1,4 @@
-# t4-llama-2-70b
+# geniac-172b-exp1
 
 # Model specs
 
