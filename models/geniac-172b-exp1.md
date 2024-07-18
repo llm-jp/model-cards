@@ -33,6 +33,7 @@
 |Beta1|0.9|
 |Beta2|0.95|
 |Epsilon|1e-5|
+|Weight decay factor|0.1|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
