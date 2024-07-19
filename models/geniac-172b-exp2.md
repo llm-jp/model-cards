@@ -20,13 +20,13 @@
 |Spec name|Value|
 |:---|:---|
 |Dataset|LLM-jp v3.1|
-|Number of tokens|**FIXME**|
+|Number of tokens|2,072,488,058,295|
 
 # Training specs
 
 |Spec name|Value|
 |:---|:---|
-|Implementation| **FIXME (link)** [Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/0cc02dff7943fddc53da42d8893dafe28ec3cf8e)|
+|Implementation| **FIXME (link)** [Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/48cadf30d35addadb3761358f7c75c2e25952cc6)|
 |Optimizer|AdamW|
 |Initial learning rate|8e-5|
 |Final learning rate|8e-6|
@@ -37,8 +37,8 @@
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
-|Learning rate Decay steps|**FIXME**|
-|Total training steps|**FIXME**|
+|Learning rate Decay steps|290812|
+|Total training steps|292812|
 |Global batch size|1728|
 |Dropout rate|0.0|
 |Floating point precisions|BF16|
