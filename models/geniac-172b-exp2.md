@@ -1,4 +1,4 @@
-# t4-llama-2-70b
+# geniac-172b-exp2
 
 # Model specs
 
@@ -19,27 +19,29 @@
 # Dataset specs
 |Spec name|Value|
 |:---|:---|
-|Dataset|LLM-jp v3|
-|Number of tokens|2,100,002,291,712 (=2.1T)|
+|Dataset|LLM-jp v3.1|
+|Number of tokens|**FIXME**|
 
 # Training specs
 
 |Spec name|Value|
 |:---|:---|
-|Implementation|[Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/0cc02dff7943fddc53da42d8893dafe28ec3cf8e)|
+|Implementation| **FIXME (link)** [Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/0cc02dff7943fddc53da42d8893dafe28ec3cf8e)|
 |Optimizer|AdamW|
-|Initial learning rate|1e-4|
+|Initial learning rate|8e-5|
+|Final learning rate|8e-6|
 |Beta1|0.9|
 |Beta2|0.95|
-|Epsilon|1e-5|
+|Epsilon|1e-8|
+|Weight decay factor|0.1|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
-|Learning rate Decay steps|268,442 (=1.9T Token)|
-|Total training steps|296,699|
+|Learning rate Decay steps|**FIXME**|
+|Total training steps|**FIXME**|
 |Global batch size|1728|
 |Dropout rate|0.0|
-|Floating point precisions|BF16 -> BF16 + FP8|
+|Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 
@@ -51,11 +53,11 @@
 |Number of Nodes|64|
 |CPU|Intel(R) Xeon(R) Platinum 8481C CPU @ 2.70GHz|
 |RAM|1.8TB|
-|Accelerators| NVIDIA H100 80GB |
+|Accelerators|NVIDIA H100 80GB|
 |Number of accelerators per instance|8|
-|Intra Node Communication |NVLink|
+|Intra Node Communication|NVLink|
 |Inter Node Communication|GPU Direct TCPX-v7|
 
 # Comments
 
-7,000 iteration 以降は TransformerEngine FP8 hybrid 機能を利用しています。
+**TBD**

@@ -1,4 +1,4 @@
-# geniac-13b-exp2
+# geniac-13b-exp4
 
 # Model specs
 
@@ -17,14 +17,14 @@
 # Dataset specs
 |Spec name|Value|
 |:---|:---|
-|Dataset|LLM-jp v3|
-|Number of tokens|2,117,241,409,943 Token|
+|Dataset|LLM-jp v3.1|
+|Number of tokens|2,072,488,058,295|
 
 # Training specs
 
 |Spec name|Value|
 |:---|:---|
-|Implementation|[Megatron-LM](https://github.com/Taishi-N324/Megatron-LM/tree/61447ffbc2cf60035428cea9c112565cfe32e33a)|
+|Implementation|[Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/9c8d91d6667a12e97bb84f103dbbe16f08dddcbb)|
 |Optimizer|AdamW|
 |Initial learning rate|2e-4|
 |Final learning rate|2e-5|
@@ -35,21 +35,21 @@
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
-|Learning rate scheduling steps|452,995|
-|Total training steps|452,995|
+|Learning rate scheduling steps|492120|
+|Total training steps|494120|
 |Global batch size|1,024|
 |Dropout rate|0.0|
 |Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
-|Embedding scale|✅|
+|Embedding scale|❌|
 
 # Environmental specs
 
 |Spec name|Value|
 |:---|:---|
 |Data center|Google Cloud (asia-southeast1-c)|
-|Number of Nodes|8|
+|Number of Nodes|32|
 |Processor|Intel(R) Xeon(R) Platinum 8481C CPU @ 2.70GHz|
 |Number of CPUs per instance|2|
 |RAM|1.8TiB|
@@ -58,7 +58,3 @@
 |Intra Node Communication |NVLink|
 
 # Comments
-
-[geniac-13b-exp1](geniac-13b-exp1.md) の学習において不安定性がみられたため、対策として、Embedding scaleの使用、fp8-hybridからBF16の使用、LRを2.5e-4から2e-4にしています。
-
-学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。
