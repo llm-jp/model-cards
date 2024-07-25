@@ -57,4 +57,15 @@
 |Number of accelerators per instance|8|
 |Intra Node Communication |NVLink|
 
+|Spec name|Value|
+|:---|:---|
+|Name|Sakura Internet|
+|Number of Nodes|32|
+|Processor|Intel Xeon Platinum 8480|
+|Number of CPUs per instance|2|
+|RAM|2.0TB|
+|Accelerators|NVIDIA H100 80GB|
+|Number of accelerators per instance|8|
+|Intra Node Communication |NVLink|
+
 # Comments
