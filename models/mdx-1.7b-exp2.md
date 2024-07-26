@@ -49,7 +49,7 @@
 |Spec name|Value|
 |:---|:---|
 |Data center|mdx|
-|Number of Nodes|8|
+|Number of Nodes|16|
 |Processor|Intel Xeon Platinum 8368 Processor (38core, 2.4GHz)|
 |Number of processors per instance|2|
 |RAM|448 GiB|
