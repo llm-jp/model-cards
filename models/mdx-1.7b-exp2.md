@@ -24,7 +24,7 @@
 
 |Spec name|Value|
 |:---|:---|
-|Implementation|**FIXME** [Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/******)|
+|Implementation|[Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/402e6ff1937176db4e1e3dedfefaa15f97204d84)|
 |Optimizer|AdamW|
 |Initial learning rate|3e-4|
 |Final learning rate|3e-5|
