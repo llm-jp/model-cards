@@ -9,15 +9,15 @@
 |Number of embedding units|5120|
 |Number of FFN hidden units|13824|
 |Number of attention heads|40|
-|Vocabulary size|65536|
+|Vocabulary size|101047 (+73 dummy 101120)|
 |Maximum sequence length|2048|
-|Positional embedding|*RoPE*|
+|Positional embedding|RoPE|
 
 # Dataset specs
 |Spec name|Value|
 |:---|:---|
 |Dataset|LLM-jp v3 (all languages except english) & LLM-jp v1.0.1 English-Pile|
-|Number of tokens|*2.1T*|
+|Number of tokens|250B (4096*62776350)|
 
 # Training specs
 
