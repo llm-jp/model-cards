@@ -1,4 +1,4 @@
-# geniac-13b-exp4
+# LLM-jp v3 13B experiment 1
 
 # Model specs
 
@@ -17,17 +17,17 @@
 # Dataset specs
 |Spec name|Value|
 |:---|:---|
-|Dataset|LLM-jp v3.1|
-|Number of tokens|2,072,488,058,295|
+|Dataset|LLM-jp v3|
+|Number of tokens|2,117,241,409,943 Token|
 
 # Training specs
 
 |Spec name|Value|
 |:---|:---|
-|Implementation|[Megatron-LM](https://github.com/llm-jp/Megatron-LM/tree/9c8d91d6667a12e97bb84f103dbbe16f08dddcbb)|
+|Implementation|[Megatron-LM](https://github.com/Taishi-N324/Megatron-LM/tree/61447ffbc2cf60035428cea9c112565cfe32e33a)|
 |Optimizer|AdamW|
-|Initial learning rate|2e-4|
-|Final learning rate|2e-5|
+|Initial learning rate|2.5e-4|
+|Final learning rate|2.5e-5|
 |Beta1|0.9|
 |Beta2|0.95|
 |Epsilon|1e-8|
@@ -35,21 +35,23 @@
 |Warmup strategy|Linear|
 |Warmup steps|2000|
 |Learning rate scheduling strategy|Cosine|
-|Learning rate scheduling steps|492120|
-|Total training steps|494120|
+|Learning rate scheduling steps|452,995|
+|Total training steps|452,995|
 |Global batch size|1,024|
 |Dropout rate|0.0|
-|Floating point precisions|BF16|
+|Floating point precisions|fp8-hybrid|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 |Embedding scale|❌|
+|Tensor parallel size|2|
+|Pipeline parallel size|2|
 
 # Environmental specs
 
 |Spec name|Value|
 |:---|:---|
 |Data center|Google Cloud (asia-southeast1-c)|
-|Number of Nodes|32|
+|Number of Nodes|8|
 |Processor|Intel(R) Xeon(R) Platinum 8481C CPU @ 2.70GHz|
 |Number of CPUs per instance|2|
 |RAM|1.8TiB|
@@ -57,17 +59,6 @@
 |Number of accelerators per instance|8|
 |Intra Node Communication |NVLink|
 
-|Spec name|Value|
-|:---|:---|
-|Name|Sakura Internet|
-|Number of Nodes|32|
-|Processor|Intel Xeon Platinum 8480|
-|Number of CPUs per instance|2|
-|RAM|2.0TB|
-|Accelerators|NVIDIA H100 80GB|
-|Number of accelerators per instance|8|
-|Intra Node Communication |NVLink|
-
 # Comments
 
-Run on Sakura Internet after iteration 15000
+学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。

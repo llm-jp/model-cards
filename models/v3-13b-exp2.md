@@ -1,4 +1,4 @@
-# geniac-13b-exp2
+# LLM-jp v3 13B experiment 2
 
 # Model specs
 
@@ -43,6 +43,8 @@
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 |Embedding scale|✅|
+|Tensor parallel size|2|
+|Pipeline parallel size|2|
 
 # Environmental specs
 

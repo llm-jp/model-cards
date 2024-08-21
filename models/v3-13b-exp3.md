@@ -1,4 +1,4 @@
-# geniac-13b-exp1
+# LLM-jp v3 13B experiment 3
 
 # Model specs
 
@@ -26,11 +26,11 @@
 |:---|:---|
 |Implementation|[Megatron-LM](https://github.com/Taishi-N324/Megatron-LM/tree/61447ffbc2cf60035428cea9c112565cfe32e33a)|
 |Optimizer|AdamW|
-|Initial learning rate|2.5e-4|
-|Final learning rate|2.5e-5|
+|Initial learning rate|2e-4|
+|Final learning rate|2e-5|
 |Beta1|0.9|
 |Beta2|0.95|
-|Epsilon|1e-8|
+|Epsilon|1e-5|
 |Weight decay factor|0.1|
 |Warmup strategy|Linear|
 |Warmup steps|2000|
@@ -39,10 +39,12 @@
 |Total training steps|452,995|
 |Global batch size|1,024|
 |Dropout rate|0.0|
-|Floating point precisions|fp8-hybrid|
+|Floating point precisions|BF16|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 |Embedding scale|❌|
+|Tensor parallel size|2|
+|Pipeline parallel size|2|
 
 # Environmental specs
 
@@ -58,5 +60,10 @@
 |Intra Node Communication |NVLink|
 
 # Comments
+
+Loss spikeの対策に、Z loss、BF16の使用に加え、LRを2e-4にしています。
+
+LlamaForCausalLMとしてモデルをリリースしたいため、[geniac-13b-exp2](geniac-13b-exp2.md)から、Embedding scaleを除いています。加えて、Epsilonの値を、1e-8から、
+[geniac-172b](geniac-172b.md)と[mdx-1.7b](mdx-1.7b.md)と同じ 1e-5に変更しています。1e-5の値は、[Llama 2](https://arxiv.org/abs/2307.09288)に倣います。
 
 学習データはGENIAC 172Bモデルと同様であるため、GENIAモデルのモデルサイズ縮小版としての性格をもちます。

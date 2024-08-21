@@ -1,4 +1,4 @@
-# t4-llama-2-70b
+# LLM-jp v3 70B experiment 1
 
 # Model specs
 
@@ -44,6 +44,8 @@ BF16|
 |Floating point precisions 21,501 iter~|fp8-hybrid|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
+|Tensor parallel size|4|
+|Pipeline parallel size|4|
 
 # Environmental specs
 
