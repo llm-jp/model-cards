@@ -43,6 +43,8 @@
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
 |Embedding scale|❌|
+|Tensor parallel size|2|
+|Pipeline parallel size|2|
 
 # Environmental specs
 

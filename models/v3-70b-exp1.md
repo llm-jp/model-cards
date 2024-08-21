@@ -44,6 +44,8 @@ BF16|
 |Floating point precisions 21,501 iter~|fp8-hybrid|
 |Additional randomness/approximation|Flash Attention|
 |Z loss|1e-4|
+|Tensor parallel size|4|
+|Pipeline parallel size|4|
 
 # Environmental specs
 
