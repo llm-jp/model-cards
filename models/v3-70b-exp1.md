@@ -1,4 +1,4 @@
-# t4-llama-2-70b
+# LLM-jp v3 70B experiment 1
 
 # Model specs
 

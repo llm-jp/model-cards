@@ -1,4 +1,4 @@
-# geniac-13b-exp4
+# LLM-jp v3 13B experiment 4
 
 # Model specs
 
